@@ -8,6 +8,9 @@ export function Header() {
           {SITE_NAME}
         </a>
         <nav className="flex gap-4 text-sm">
+          <a href="/blog/" className="text-text-secondary hover:text-text">
+            Blog
+          </a>
           {TOOLS.map((tool) => (
             <a
               key={tool.slug}

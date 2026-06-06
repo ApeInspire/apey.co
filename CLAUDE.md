@@ -89,6 +89,51 @@ src/tools/{tool-name}/
 Cloudflare Web Analytics 在 Dashboard 开启即生效，无需改代码。自定义事件追踪配置在 `src/shared/analyticsConfig.ts`。
 新增工具时在组件中调用 `trackToolUse(toolName, action, props)` 追踪关键行为。
 
+## 博客系统
+
+MDX 格式，React 组件嵌入，统一模板。
+
+### 目录结构
+
+```
+blog/{slug}/
+├── index.html          ← SEO meta + 入口
+└── main.tsx            ← 渲染文章内容 + 反馈组件
+```
+
+### 文章结构
+
+```
+1. 开头（2-3 句）：直接说结论或问题
+2. 背景（可选）
+3. 正文：分点论述
+4. 结尾：总结
+5. ArticleFeedback（👍/👎）
+6. ToolDemandPoll（需要工具吗？）
+7. RelatedTools（相关工具卡片）
+```
+
+### 新增博客流程
+
+1. 创建 `blog/{slug}/index.html` — 复制已有文章，改 SEO meta
+2. 创建 `blog/{slug}/main.tsx` — BlogLayout + 文章内容 + 反馈组件
+3. 更新 `src/blog/main.tsx` — TOOLS 列表加一条
+4. 更新 `vite.config.ts` — rollupOptions.input 加一行
+5. 更新 `public/sitemap.xml` — 加 URL
+
+### 内容分类
+
+| 分类 | slug |
+|------|------|
+| AI 工作实践 | ai-practice |
+| 工具评测 | tool-review |
+| 行业见解 | industry |
+| 效率技巧 | efficiency |
+
+### 写作风格
+
+用"我"不用"笔者"，用"你"不用"您"，直接说观点，1000-2000 字。
+
 ## 构建
 
 ```bash
