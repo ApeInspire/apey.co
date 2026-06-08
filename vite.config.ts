@@ -9,14 +9,24 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
-        blog: resolve(__dirname, "blog-index.html"),
+        zh: resolve(__dirname, "zh/index.html"),
+        "blog/index": resolve(__dirname, "blog-index.html"),
         "blog/how-i-use-ai-for-daily-work": resolve(
           __dirname,
           "blog/how-i-use-ai-for-daily-work/index.html"
         ),
-        "tools/paragraph-formatter": resolve(
+        "blog/how-i-built-a-website-with-ai": resolve(
           __dirname,
-          "tools/paragraph-formatter/index.html"
+          "blog/how-i-built-a-website-with-ai/index.html"
+        ),
+        "zh/blog/how-i-built-a-website-with-ai": resolve(
+          __dirname,
+          "zh/blog/how-i-built-a-website-with-ai/index.html"
+        ),
+        mvp: resolve(__dirname, "mvp/index.html"),
+        "mvp/first-product": resolve(
+          __dirname,
+          "mvp/first-product/index.html"
         ),
       },
     },
