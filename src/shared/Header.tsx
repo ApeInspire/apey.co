@@ -14,8 +14,11 @@ export function Header({ lang = "en" }: HeaderProps) {
           {SITE_NAME}
         </a>
         <nav className="flex gap-4 text-sm items-center">
-          <a href="/blog/" className="text-text-secondary hover:text-text">
-            Blog
+          <a href={isZh ? "/zh/" : "/"} className="text-text-secondary hover:text-text">
+            {isZh ? "见解" : "Insights"}
+          </a>
+          <a href={isZh ? "/zh/mvp/" : "/mvp/"} className="text-text-secondary hover:text-text">
+            MVP
           </a>
           <a href={isZh ? "/blog/how-i-built-a-website-with-ai/" : "/zh/blog/how-i-built-a-website-with-ai/"} className="text-text-secondary hover:text-text">
             {isZh ? "English" : "中文"}

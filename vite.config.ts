@@ -24,6 +24,7 @@ export default defineConfig({
           "zh/blog/how-i-built-a-website-with-ai/index.html"
         ),
         mvp: resolve(__dirname, "mvp/index.html"),
+        "zh/mvp": resolve(__dirname, "zh/mvp/index.html"),
         "mvp/first-product": resolve(
           __dirname,
           "mvp/first-product/index.html"
