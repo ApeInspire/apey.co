@@ -1,23 +1,21 @@
 import type { ReactNode } from "react";
 import { Header } from "../shared/Header";
 import { Footer } from "../shared/Footer";
-import type { Lang } from "../i18n";
 
-interface BlogLayoutProps {
+interface MvpLayoutProps {
   children: ReactNode;
-  lang?: Lang;
 }
 
-export function BlogLayout({ children, lang = "en" }: BlogLayoutProps) {
+export function MvpLayout({ children }: MvpLayoutProps) {
   return (
     <div className="min-h-screen flex flex-col bg-bg text-text font-sans">
-      <Header lang={lang} />
+      <Header />
       <main className="flex-1">
-        <article className="max-w-2xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
           {children}
-        </article>
+        </div>
       </main>
-      <Footer lang={lang} />
+      <Footer />
     </div>
   );
 }

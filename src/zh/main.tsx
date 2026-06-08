@@ -1,28 +1,28 @@
 import { createRoot } from "react-dom/client";
-import { Layout } from "./shared/Layout";
-import { BlogList } from "./blog/BlogList";
-import { initAnalytics } from "./shared/analytics";
-import "./styles/global.css";
-import type { BlogPostMeta } from "./blog/blogConfig";
+import { Layout } from "../shared/Layout";
+import { BlogList } from "../blog/BlogList";
+import { initAnalytics } from "../shared/analytics";
+import "../styles/global.css";
+import type { BlogPostMeta } from "../blog/blogConfig";
 
 initAnalytics();
 
 const posts: BlogPostMeta[] = [
   {
     slug: "how-i-built-a-website-with-ai",
-    title: "I Built a Website Through Conversation With AI",
+    title: "我跟 AI 对话建了一个网站",
     description:
-      "A 20-year IT veteran built an entire website by talking to AI. 3 hours, ¥5.85.",
+      "一个 20 年 IT 老兵通过对话建了整个网站，3 小时，¥5.85。",
     date: "2026-06-07",
     category: "ai-practice",
     tags: ["ai-development", "claude-code", "web-development"],
     author: "Ape",
-    lang: "en",
+    lang: "zh",
   },
 ];
 
 createRoot(document.getElementById("root")!).render(
-  <Layout>
+  <Layout lang="zh">
     <div className="max-w-2xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
       <BlogList posts={posts} />
     </div>

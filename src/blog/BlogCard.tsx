@@ -6,28 +6,25 @@ interface BlogCardProps {
 }
 
 export function BlogCard({ post }: BlogCardProps) {
+  const cat = CATEGORIES[post.category];
+  const lang = post.lang || "en";
+
   return (
     <a
-      href={`/blog/${post.slug}/`}
-      className="block p-6 border border-border rounded-lg hover:border-primary hover:shadow-md transition-all"
+      href={lang === "zh" ? `/zh/blog/${post.slug}/` : `/blog/${post.slug}/`}
+      className="group block py-5 border-b border-border last:border-b-0 hover:bg-bg-secondary/50 transition-colors -mx-4 px-4 sm:-mx-6 sm:px-6 rounded-lg"
     >
-      <div className="flex items-center gap-2 mb-2 text-xs text-text-secondary">
-        <span className="px-2 py-0.5 bg-bg-secondary rounded">
-          {CATEGORIES[post.category]?.label || post.category}
-        </span>
-        <span>{post.date}</span>
+      <div className="flex items-center gap-2 text-xs text-text-secondary mb-1.5">
+        <span>{cat ? (lang === "zh" ? cat.zh : cat.en) : post.category}</span>
+        <span>·</span>
+        <time>{post.date}</time>
       </div>
-      <h3 className="text-lg font-semibold mb-2">{post.title}</h3>
-      <p className="text-sm text-text-secondary">{post.description}</p>
-      {post.tags.length > 0 && (
-        <div className="flex flex-wrap gap-1 mt-3">
-          {post.tags.map((tag) => (
-            <span key={tag} className="text-xs px-2 py-0.5 border border-border rounded">
-              {tag}
-            </span>
-          ))}
-        </div>
-      )}
+      <h3 className="text-base font-medium group-hover:text-primary transition-colors leading-relaxed">
+        {post.title}
+      </h3>
+      <p className="text-sm text-text-secondary mt-1 leading-relaxed line-clamp-2">
+        {post.description}
+      </p>
     </a>
   );
 }

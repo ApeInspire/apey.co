@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import "./ad.css";
 
 @theme {
   --color-primary: #2563eb;
@@ -9,5 +8,102 @@
   --color-text: #111827;
   --color-text-secondary: #6b7280;
   --color-border: #e5e7eb;
-  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-sans: "Inter", "Noto Sans SC", system-ui, -apple-system, sans-serif;
+}
+
+/* Blog prose styles */
+.prose-blog {
+  @apply text-base leading-relaxed text-text;
+}
+
+.prose-blog h2 {
+  @apply text-lg font-bold mt-10 mb-4;
+}
+
+.prose-blog h3 {
+  @apply text-base font-semibold mt-8 mb-3;
+}
+
+.prose-blog p {
+  @apply mb-4 leading-relaxed;
+}
+
+.prose-blog ul,
+.prose-blog ol {
+  @apply mb-4 pl-5 space-y-2;
+}
+
+.prose-blog ul {
+  @apply list-disc;
+}
+
+.prose-blog ol {
+  @apply list-decimal;
+}
+
+.prose-blog li {
+  @apply leading-relaxed;
+}
+
+.prose-blog strong {
+  @apply font-semibold;
+}
+
+.prose-blog a {
+  @apply text-primary underline underline-offset-2 hover:text-primary-hover;
+}
+
+.prose-blog blockquote {
+  @apply pl-4 border-l-2 border-border italic text-text-secondary my-4;
+}
+
+.prose-blog code {
+  @apply text-sm bg-bg-secondary px-1.5 py-0.5 rounded font-mono;
+}
+
+.prose-blog pre {
+  @apply bg-bg-secondary p-4 rounded-lg overflow-x-auto my-4 text-sm;
+}
+
+.prose-blog pre code {
+  @apply bg-transparent p-0;
+}
+
+.prose-blog figure {
+  @apply my-6;
+}
+
+.prose-blog figure img {
+  @apply w-full rounded-lg border border-border;
+}
+
+.prose-blog figure figcaption {
+  @apply text-xs text-text-secondary mt-2 text-center;
+}
+
+.prose-blog hr {
+  @apply my-8 border-border;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .prose-blog {
+    @apply text-sm;
+  }
+
+  .prose-blog h2 {
+    @apply text-base;
+  }
+
+  .prose-blog figure img {
+    @apply rounded;
+  }
+}
+
+/* Line clamp utility */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }

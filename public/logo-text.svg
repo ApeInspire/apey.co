@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40" fill="none">
+  <!-- 探 极简版 — 手伸入穴中 -->
+  <!-- 穴 -->
+  <path d="M16 6 L34 6 L34 34 L16 34" stroke="#111827" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- 手 -->
+  <path d="M2 20 L10 20" stroke="#111827" stroke-width="2" stroke-linecap="round"/>
+  <path d="M10 17 L14 17 L14 23 L10 23" stroke="#111827" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M14 17 L20 14" stroke="#111827" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M14 20 L22 20" stroke="#111827" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M14 23 L20 26" stroke="#111827" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- Text -->
+  <text x="42" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="600" fill="#111827" letter-spacing="-0.5">apey.co</text>
+</svg>

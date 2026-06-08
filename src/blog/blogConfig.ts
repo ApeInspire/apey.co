@@ -9,28 +9,14 @@ export interface BlogPostMeta {
   relatedTools?: string[];
   author: string;
   slug: string;
+  lang?: "en" | "zh";
 }
 
 export type BlogCategory = "ai-practice" | "tool-review" | "industry" | "efficiency";
 
-export const CATEGORIES: Record<BlogCategory, { label: string; description: string }> = {
-  "ai-practice": {
-    label: "AI Work Practice",
-    description: "Real experiences using AI for daily work",
-  },
-  "tool-review": {
-    label: "Tool Reviews",
-    description: "Honest reviews of AI and software tools",
-  },
-  industry: {
-    label: "Industry Insights",
-    description: "Analysis of the AI tools industry",
-  },
-  efficiency: {
-    label: "Efficiency Tips",
-    description: "Tips and tricks for better productivity",
-  },
+export const CATEGORIES: Record<BlogCategory, { en: string; zh: string }> = {
+  "ai-practice": { en: "AI Practice", zh: "AI 实践" },
+  "tool-review": { en: "Tool Reviews", zh: "工具评测" },
+  industry: { en: "Industry", zh: "行业见解" },
+  efficiency: { en: "Efficiency", zh: "效率技巧" },
 };
-
-export const BLOG_TITLE = "apey.co/blog";
-export const BLOG_DESCRIPTION = "AI tools, industry insights, and efficiency tips from a working IT professional.";
