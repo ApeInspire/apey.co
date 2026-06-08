@@ -10,10 +10,10 @@ initAnalytics();
 const posts: BlogPostMeta[] = [
   {
     slug: "how-i-built-a-website-with-ai",
-    title: "我跟 AI 对话建了一个网站",
+    title: "知行合一",
     description:
-      "一个 20 年 IT 老兵通过对话建了整个网站，3 小时，¥5.85。",
-    date: "2026-06-07",
+      "用 AI 从零搭了一个网站。关于编程语言、判断、品味，和王阳明。",
+    date: "2026-06-08",
     category: "ai-practice",
     tags: ["ai-development", "claude-code", "web-development"],
     author: "Ape",
@@ -24,6 +24,7 @@ const posts: BlogPostMeta[] = [
 createRoot(document.getElementById("root")!).render(
   <Layout lang="zh">
     <div className="max-w-2xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+      <h1 className="text-xl font-bold mb-6">见解</h1>
       <BlogList posts={posts} />
     </div>
   </Layout>
