@@ -1,5 +1,5 @@
 import { createRoot } from "react-dom/client";
-import { Layout } from "../shared/Layout";
+import { SkillsLayout } from "./SkillsLayout";
 import { initAnalytics } from "../shared/analytics";
 import { SKILLS, CATEGORIES } from "./skillsConfig";
 import type { SkillCategory } from "./skillsConfig";
@@ -16,7 +16,7 @@ function SkillsIndex() {
   }
 
   return (
-    <Layout>
+    <SkillsLayout>
       <h1 className="text-xl font-bold mb-2">Skills</h1>
       <p className="text-sm text-text-secondary mb-8">
         Claude Code skills — reusable AI capabilities. Install them in your project and Claude learns new workflows.
@@ -46,7 +46,7 @@ function SkillsIndex() {
           </section>
         );
       })}
-    </Layout>
+    </SkillsLayout>
   );
 }
 

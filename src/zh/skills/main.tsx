@@ -1,5 +1,5 @@
 import { createRoot } from "react-dom/client";
-import { Layout } from "../../shared/Layout";
+import { SkillsLayout } from "../../skills/SkillsLayout";
 import { initAnalytics } from "../../shared/analytics";
 import { SKILLS, CATEGORIES } from "../../skills/skillsConfig";
 import type { SkillCategory } from "../../skills/skillsConfig";
@@ -16,7 +16,7 @@ function SkillsIndexZh() {
   }
 
   return (
-    <Layout>
+    <SkillsLayout lang="zh">
       <h1 className="text-xl font-bold mb-2">技能</h1>
       <p className="text-sm text-text-secondary mb-8">
         Claude Code 技能集 — 可复用的 AI 能力。安装到项目后，Claude 即可学习新的工作流。
@@ -46,7 +46,7 @@ function SkillsIndexZh() {
           </section>
         );
       })}
-    </Layout>
+    </SkillsLayout>
   );
 }
 

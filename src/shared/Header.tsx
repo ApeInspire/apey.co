@@ -23,7 +23,7 @@ export function Header({ lang = "en" }: HeaderProps) {
           <a href={isZh ? "/zh/mvp/" : "/mvp/"} className="text-text-secondary hover:text-text">
             MVP
           </a>
-          <a href={isZh ? "/blog/how-i-built-a-website-with-ai/" : "/zh/blog/how-i-built-a-website-with-ai/"} className="text-text-secondary hover:text-text">
+          <a href={isZh ? "/" : "/zh/"} className="text-text-secondary hover:text-text">
             {isZh ? "English" : "中文"}
           </a>
         </nav>
