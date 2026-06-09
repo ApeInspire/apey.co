@@ -189,7 +189,7 @@ export const sections = [
   {
     type: "paragraph" as const,
     content:
-      "I told the AI this site does two things: write what I know as blog posts, build what I know as MVPs. It distilled four characters — 知行合一. The unity of knowing and acting.",
+      "I told the AI this site does two things: turn the unknown into the known through thinking and writing, and turn the known into reality through building. It distilled four characters — 知行合一. The unity of knowing and acting.",
   },
   {
     type: "paragraph" as const,
@@ -292,16 +292,11 @@ export const sections = [
   {
     type: "paragraph" as const,
     content:
-      "But let me be clear on one thing. The content, the structure, the logic of every section — I dictated that word by word. AI enriched the wording, adjusted the style, checked the grammar. The direction was mine. The judgment was mine. What to include and what to cut — mine. AI was the hand. The brain was mine.",
+      "But let me be clear on one thing. The content, the structure, the logic of every section — I dictated that word by word. AI enriched the wording, adjusted the style, checked the grammar. The direction was mine. The judgment was mine. What to include and what to cut — mine. AI was the hand.",
   },
   {
     type: "image" as const,
     src: "/cost.png",
     caption: "What this piece actually cost",
-  },
-  {
-    type: "paragraph" as const,
-    content:
-      "If you spot some odd sentences, don't be surprised. AI wrote this too.",
   },
 ];

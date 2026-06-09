@@ -189,7 +189,7 @@ export const sections = [
   {
     type: "paragraph" as const,
     content:
-      "我告诉 AI：这个站做两件事，把我知道的写成博客，把我知道的做成 MVP。它回了四个字——知行合一。",
+      "我告诉 AI：这个站做两件事，把未知经过思考和写作变成已知，把已知变成现实和实现。它回了四个字——知行合一。",
   },
   {
     type: "paragraph" as const,
@@ -292,16 +292,11 @@ export const sections = [
   {
     type: "paragraph" as const,
     content:
-      "但有一点要讲清楚。整个文章的内容、结构、每一段的逻辑，是我一字一句告诉 AI 的。它帮我丰富了表述、调整了风格、校验了语法。方向是我的，判断是我的。什么该写什么不该写，是我定的。AI 是手，脑子是我。",
+      "但有一点要讲清楚。整个文章的内容、结构、每一段的逻辑，是我一字一句告诉 AI 的。它帮我丰富了表述、调整了风格、校验了语法。方向是我的，判断是我的。什么该写什么不该写，是我定的。AI 是手。",
   },
   {
     type: "image" as const,
     src: "/cost.png",
     caption: "这篇东西的实际花费",
-  },
-  {
-    type: "paragraph" as const,
-    content:
-      "如果你看到一些奇奇怪怪的句子，不要奇怪。它也是用 AI 写的。",
   },
 ];
