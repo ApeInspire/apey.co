@@ -23,6 +23,10 @@ export default defineConfig({
           __dirname,
           "zh/blog/how-i-built-a-website-with-ai/index.html"
         ),
+        "zh/blog/what-is-claude-code-skill": resolve(
+          __dirname,
+          "zh/blog/what-is-claude-code-skill/index.html"
+        ),
         mvp: resolve(__dirname, "mvp/index.html"),
         "zh/mvp": resolve(__dirname, "zh/mvp/index.html"),
         skills: resolve(__dirname, "skills/index.html"),

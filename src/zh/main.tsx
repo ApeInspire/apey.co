@@ -9,6 +9,17 @@ initAnalytics();
 
 const posts: BlogPostMeta[] = [
   {
+    slug: "what-is-claude-code-skill",
+    title: "Claude Code Skill：从第一性原理拆解",
+    description:
+      "Claude Code Skill 不是插件，是一段在运行时注入的 Prompt 片段。五层架构拆解它为什么能工作。",
+    date: "2026-06-09",
+    category: "ai-practice",
+    tags: ["claude-code", "skill", "ai-architecture", "prompt-engineering"],
+    author: "Ape",
+    lang: "zh",
+  },
+  {
     slug: "how-i-built-a-website-with-ai",
     title: "知行合一",
     description:
