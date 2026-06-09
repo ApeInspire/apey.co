@@ -292,7 +292,7 @@ export const sections = [
   {
     type: "paragraph" as const,
     content:
-      "But let me be clear on one thing. The content, the structure, the logic of every section — I dictated that word by word. AI enriched the wording, adjusted the style, checked the grammar. The direction was mine. The judgment was mine. What to include and what to cut — mine. AI was the hand.",
+      "But let me be clear on one thing. The content, the structure, the logic of every section — I dictated that word by word. AI enriched the wording, adjusted the style, checked the grammar. The direction was mine. The judgment was mine. What to include and what to cut — mine.",
   },
   {
     type: "image" as const,
