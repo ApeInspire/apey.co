@@ -17,6 +17,9 @@ export function Header({ lang = "en" }: HeaderProps) {
           <a href={isZh ? "/zh/" : "/"} className="text-text-secondary hover:text-text">
             {isZh ? "见解" : "Insights"}
           </a>
+          <a href={isZh ? "/zh/skills/" : "/skills/"} className="text-text-secondary hover:text-text">
+            Skills
+          </a>
           <a href={isZh ? "/zh/mvp/" : "/mvp/"} className="text-text-secondary hover:text-text">
             MVP
           </a>

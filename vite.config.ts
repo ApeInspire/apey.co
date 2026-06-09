@@ -25,6 +25,16 @@ export default defineConfig({
         ),
         mvp: resolve(__dirname, "mvp/index.html"),
         "zh/mvp": resolve(__dirname, "zh/mvp/index.html"),
+        skills: resolve(__dirname, "skills/index.html"),
+        "skills/publish-article": resolve(
+          __dirname,
+          "skills/publish-article/index.html"
+        ),
+        "zh/skills": resolve(__dirname, "zh/skills/index.html"),
+        "zh/skills/publish-article": resolve(
+          __dirname,
+          "zh/skills/publish-article/index.html"
+        ),
         "mvp/first-product": resolve(
           __dirname,
           "mvp/first-product/index.html"
