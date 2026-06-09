@@ -6,19 +6,9 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://apey.co/tools/paragraph-formatter/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://apey.co/skills/</loc>
+    <loc>https://apey.co/zh/</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://apey.co/skills/publish-article/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://apey.co/blog/</loc>
@@ -26,7 +16,27 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://apey.co/blog/what-is-claude-code-skill/</loc>
+    <loc>https://apey.co/skills/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://apey.co/zh/skills/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://apey.co/mvp/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://apey.co/zh/mvp/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://apey.co/blog/how-i-built-a-website-with-ai/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -34,5 +44,30 @@
     <loc>https://apey.co/blog/how-i-use-ai-for-daily-work/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://apey.co/blog/what-is-claude-code-skill/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://apey.co/zh/blog/how-i-built-a-website-with-ai/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://apey.co/skills/publish-article/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://apey.co/zh/skills/publish-article/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://apey.co/mvp/first-product/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>
