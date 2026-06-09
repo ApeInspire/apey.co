@@ -59,7 +59,7 @@ export const sections = [
   {
     type: "paragraph" as const,
     content:
-      "数字不重要。重要的是这个过程确认了几件我一直隐约觉得对、但没机会验证的事。",
+      "但这个过程中真正重要的是另外几件事。",
   },
   {
     type: "heading" as const,
@@ -117,7 +117,7 @@ export const sections = [
   {
     type: "paragraph" as const,
     content:
-      "浏览器的价值不用多说。终端呢？它轻、快、不需要界面，给 AI 用刚好。你想象一下，一个 AI Agent 要操作你的电脑，最快的方式不是打开网页，是敲命令行。",
+      "浏览器的价值不用多说。终端呢？它轻、快、不需要界面，给 AI 用刚好。一个 AI Agent 要操作你的电脑，最快的方式不是打开网页，是敲命令行。",
   },
   {
     type: "paragraph" as const,
@@ -184,17 +184,12 @@ export const sections = [
   {
     type: "paragraph" as const,
     content:
-      "有些最好的东西，来的时候你根本没预料到。",
-  },
-  {
-    type: "paragraph" as const,
-    content:
       "我告诉 AI：这个站做两件事，把未知经过思考和写作变成已知，把已知变成现实和实现。它回了四个字——知行合一。",
   },
   {
     type: "paragraph" as const,
     content:
-      "英文版是我追问出来的。我翻的「To Know Is To Act」总觉得少了点什么。于是问 AI：用「To Know To Act」怎么样？它回应了我，让我意识到一件事——去掉 is，不再是一个陈述句。变成了循环。知道，行动，再知道，再行动。少了一个词，反而更完整。",
+      "英文版是我追问出来的。我翻的「To Know Is To Act」总觉得少了点什么。于是问 AI：用「To Know To Act」怎么样？它的回应让我意识到一件事——去掉 is，不再是一个陈述句。变成了循环。知道，行动，再知道，再行动。少了一个词，反而更完整。",
   },
   {
     type: "paragraph" as const,
@@ -282,17 +277,12 @@ export const sections = [
   {
     type: "paragraph" as const,
     content:
-      "说点实话。这篇文章也是用 AI 写的。",
+      "这篇文章也是用 AI 写的。一开始用的 MiMo，小米的模型，写作不是它的强项。换成 DeepSeek V4 Pro——也是人民币计价——让它按凯文·凯利的风格写。",
   },
   {
     type: "paragraph" as const,
     content:
-      "一开始用的 MiMo。小米的模型，写作不是它的强项。换成 DeepSeek V4 Pro——也是人民币计价——让它按凯文·凯利的风格写。结果是你们看到的这样。",
-  },
-  {
-    type: "paragraph" as const,
-    content:
-      "但有一点要讲清楚。整个文章的内容、结构、每一段的逻辑，是我一字一句告诉 AI 的。它帮我丰富了表述、调整了风格、校验了语法。方向是我的，判断是我的。什么该写什么不该写，是我定的。",
+      "整个文章的内容、结构、每一段的逻辑，是我一字一句告诉 AI 的。它帮我丰富了表述、调整了风格、校验了语法。方向是我的，判断是我的。什么该写什么不该写，是我定的。",
   },
   {
     type: "image" as const,
@@ -302,6 +292,6 @@ export const sections = [
   {
     type: "paragraph" as const,
     content:
-      "晒这张图没别的意思。就是想让你知道，写这篇东西花了多少钱。",
+      "这是写这篇文章的费用。",
   },
 ];

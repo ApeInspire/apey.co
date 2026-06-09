@@ -59,7 +59,7 @@ export const sections = [
   {
     type: "paragraph" as const,
     content:
-      "But the numbers aren't the point. The point is what the process confirmed.",
+      "But the numbers aren't what mattered. What mattered were the things the process confirmed.",
   },
   {
     type: "heading" as const,
@@ -117,7 +117,7 @@ export const sections = [
   {
     type: "paragraph" as const,
     content:
-      "The browser's value is obvious. The terminal? It's light, fast, needs no UI. Perfect for AI. Think about it — if an AI agent needs to operate your machine, the fastest path isn't opening a web page. It's running a command.",
+      "The browser's value is obvious. The terminal? It's light, fast, needs no UI. Perfect for AI. If an AI agent needs to operate your machine, the fastest path isn't opening a web page. It's running a command.",
   },
   {
     type: "paragraph" as const,
@@ -180,11 +180,6 @@ export const sections = [
   {
     type: "heading" as const,
     content: "To Know To Act",
-  },
-  {
-    type: "paragraph" as const,
-    content:
-      "Some of the best moments came from places I hadn't anticipated.",
   },
   {
     type: "paragraph" as const,
@@ -282,17 +277,12 @@ export const sections = [
   {
     type: "paragraph" as const,
     content:
-      "Some honesty. This article was also written with AI.",
+      "This article was also written with AI. I tried MiMo first — Xiaomi's model, not its strength. Switched to DeepSeek V4 Pro, also RMB-priced, and had it write in Kevin Kelly's style.",
   },
   {
     type: "paragraph" as const,
     content:
-      "I tried MiMo first. Xiaomi's model. Writing isn't its strength. Switched to DeepSeek V4 Pro — also RMB-priced — and had it write in Kevin Kelly's style. What you just read is the result.",
-  },
-  {
-    type: "paragraph" as const,
-    content:
-      "But let me be clear on one thing. The content, the structure, the logic of every section — I dictated that word by word. AI enriched the wording, adjusted the style, checked the grammar. The direction was mine. The judgment was mine. What to include and what to cut — mine.",
+      "The content, the structure, the logic of every section — I dictated that word by word. AI enriched the wording, adjusted the style, checked the grammar. The direction was mine. The judgment was mine. What to include and what to cut — mine.",
   },
   {
     type: "image" as const,
@@ -302,6 +292,6 @@ export const sections = [
   {
     type: "paragraph" as const,
     content:
-      "No other point to this screenshot. Just so you know what it cost to write this.",
+      "What it cost to write this.",
   },
 ];
