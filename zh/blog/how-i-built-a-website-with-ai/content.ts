@@ -289,9 +289,4 @@ export const sections = [
     src: "/cost.png",
     caption: "这篇东西的实际花费",
   },
-  {
-    type: "paragraph" as const,
-    content:
-      "这是写这篇文章的费用。",
-  },
 ];
