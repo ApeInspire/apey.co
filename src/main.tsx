@@ -9,6 +9,17 @@ initAnalytics();
 
 const posts: BlogPostMeta[] = [
   {
+    slug: "what-is-claude-code-skill",
+    title: "Claude Code Skill: From First Principles",
+    description:
+      "Claude Code Skill is not a plug-in. It is a prompt fragment loaded at runtime. From Agent Loop to prompt patching to \"instructions are code\" — the five-layer architecture.",
+    date: "2026-06-09",
+    category: "ai-practice",
+    tags: ["claude-code", "skill", "ai-architecture", "prompt-engineering"],
+    author: "Ape",
+    lang: "en",
+  },
+  {
     slug: "how-i-built-a-website-with-ai",
     title: "To Know To Act",
     description:

@@ -30,6 +30,10 @@ export default defineConfig({
           __dirname,
           "skills/publish-article/index.html"
         ),
+        "blog/what-is-claude-code-skill": resolve(
+          __dirname,
+          "blog/what-is-claude-code-skill/index.html"
+        ),
         "zh/skills": resolve(__dirname, "zh/skills/index.html"),
         "zh/skills/publish-article": resolve(
           __dirname,
