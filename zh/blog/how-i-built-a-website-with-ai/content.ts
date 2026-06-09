@@ -299,4 +299,9 @@ export const sections = [
     src: "/cost.png",
     caption: "这篇东西的实际花费",
   },
+  {
+    type: "paragraph" as const,
+    content:
+      "晒这张图没别的意思。就是想让你知道，写这篇东西花了多少钱。",
+  },
 ];

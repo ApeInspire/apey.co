@@ -299,4 +299,9 @@ export const sections = [
     src: "/cost.png",
     caption: "What this piece actually cost",
   },
+  {
+    type: "paragraph" as const,
+    content:
+      "No other point to this screenshot. Just so you know what it cost to write this.",
+  },
 ];
