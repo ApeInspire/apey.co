@@ -9,6 +9,17 @@ initAnalytics();
 
 const posts: BlogPostMeta[] = [
   {
+    slug: "building-an-mcp-server",
+    title: "我建了一个 MCP 服务器：从协议到发布",
+    description:
+      "MCP 是 2026 年增长最快的 AI 开发技能。从协议到发布，拆解架构设计、技术决策和踩坑记录。",
+    date: "2026-06-10",
+    category: "ai-practice",
+    tags: ["mcp", "claude-code", "ai-development", "typescript", "open-source"],
+    author: "Ape",
+    lang: "zh",
+  },
+  {
     slug: "what-is-claude-code-skill",
     title: "Claude Code Skill：从第一性原理拆解",
     description:

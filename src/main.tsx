@@ -9,6 +9,17 @@ initAnalytics();
 
 const posts: BlogPostMeta[] = [
   {
+    slug: "building-an-mcp-server",
+    title: "I Built an MCP Server: From Protocol to Production",
+    description:
+      "MCP is the fastest-growing AI dev skill in 2026. Architecture, technical decisions, and lessons from building a developer-context MCP server for Claude Code.",
+    date: "2026-06-10",
+    category: "ai-practice",
+    tags: ["mcp", "claude-code", "ai-development", "typescript", "open-source"],
+    author: "Ape",
+    lang: "en",
+  },
+  {
     slug: "what-is-claude-code-skill",
     title: "Claude Code Skill: From First Principles",
     description:
