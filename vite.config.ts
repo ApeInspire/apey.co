@@ -43,6 +43,14 @@ export default defineConfig({
           __dirname,
           "zh/skills/publish-article/index.html"
         ),
+        "blog/building-an-mcp-server": resolve(
+          __dirname,
+          "blog/building-an-mcp-server/index.html"
+        ),
+        "zh/blog/building-an-mcp-server": resolve(
+          __dirname,
+          "zh/blog/building-an-mcp-server/index.html"
+        ),
         "mvp/first-product": resolve(
           __dirname,
           "mvp/first-product/index.html"
