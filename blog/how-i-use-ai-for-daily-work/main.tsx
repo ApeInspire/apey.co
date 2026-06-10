@@ -1,8 +1,6 @@
 import { createRoot } from "react-dom/client";
 import { BlogLayout } from "../../src/blog/BlogLayout";
-import { ArticleFeedback } from "../../src/blog/ArticleFeedback";
-import { ToolDemandPoll } from "../../src/blog/ToolDemandPoll";
-import { RelatedTools } from "../../src/blog/RelatedTools";
+
 import { initAnalytics } from "../../src/shared/analytics";
 import "../../src/styles/global.css";
 
@@ -88,11 +86,6 @@ function BlogPost() {
           </p>
         </div>
 
-        <div className="mt-8 border-t border-border pt-4">
-          <ArticleFeedback articleId="how-i-use-ai-for-daily-work" />
-          <ToolDemandPoll topic="AI text processing tools" />
-          <RelatedTools tools={["paragraph-formatter"]} />
-        </div>
       </article>
     </BlogLayout>
   );

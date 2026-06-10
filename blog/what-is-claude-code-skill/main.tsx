@@ -1,8 +1,6 @@
 import { createRoot } from "react-dom/client";
 import { BlogLayout } from "../../src/blog/BlogLayout";
-import { ArticleFeedback } from "../../src/blog/ArticleFeedback";
-import { ToolDemandPoll } from "../../src/blog/ToolDemandPoll";
-import { RelatedTools } from "../../src/blog/RelatedTools";
+
 import { meta, sections } from "./content";
 import { initAnalytics } from "../../src/shared/analytics";
 import "../../src/styles/global.css";
@@ -44,11 +42,6 @@ function BlogPost() {
         })}
       </div>
 
-      <div className="mt-8 border-t border-border pt-4">
-        <ArticleFeedback articleId="what-is-claude-code-skill" />
-        <ToolDemandPoll topic="Claude Code skill development" />
-        <RelatedTools tools={["publish-article"]} />
-      </div>
     </BlogLayout>
   );
 }
