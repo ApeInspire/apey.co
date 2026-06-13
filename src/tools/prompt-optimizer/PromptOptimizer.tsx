@@ -4,13 +4,17 @@ import { TextArea } from "../../shared/TextArea";
 import { CopyButton } from "../../shared/CopyButton";
 import { buildUserPrompt, getExampleGoals } from "./helpers";
 
-export function PromptOptimizer() {
+interface Props {
+  lang?: "en" | "zh";
+}
+
+export function PromptOptimizer({ lang = "en" }: Props) {
   const [goal, setGoal] = useState("");
   const [output, setOutput] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
-  const [lang] = useState("en");
 
+  const isZh = lang === "zh";
   const examples = getExampleGoals(lang);
 
   const handleOptimize = useCallback(async () => {
@@ -40,7 +44,11 @@ export function PromptOptimizer() {
         setOutput(data.prompt);
       }
     } catch {
-      setError("Network error. Check your connection and try again.");
+      setError(
+        isZh
+          ? "网络错误。请检查连接后重试。"
+          : "Network error. Check your connection and try again."
+      );
     } finally {
       setLoading(false);
     }
@@ -49,16 +57,24 @@ export function PromptOptimizer() {
   return (
     <div>
       <ToolPageHeader
-        title="AI Prompt Optimizer"
-        description="Describe what you want an AI to do. Get back a structured, executable System Prompt."
+        title={isZh ? "AI 提示词优化器" : "AI Prompt Optimizer"}
+        description={
+          isZh
+            ? "描述你想要 AI 完成的任务，获得结构化的、可执行的 System Prompt。"
+            : "Describe what you want an AI to do. Get back a structured, executable System Prompt."
+        }
       />
 
       <div className="mb-6">
         <TextArea
-          label="What do you want the AI to do?"
+          label={isZh ? "你想要 AI 完成什么任务？" : "What do you want the AI to do?"}
           value={goal}
           onChange={setGoal}
-          placeholder="e.g. 'Write SQL queries from natural language descriptions. The AI should ask clarifying questions before generating queries.'"
+          placeholder={
+            isZh
+              ? "例如：根据自然语言描述生成 SQL 查询，遇到模糊需求先提问确认。"
+              : "e.g. 'Write SQL queries from natural language descriptions. The AI should ask clarifying questions before generating queries.'"
+          }
           rows={5}
         />
       </div>
@@ -71,7 +87,7 @@ export function PromptOptimizer() {
                      hover:bg-primary-hover disabled:opacity-50 disabled:cursor-not-allowed
                      transition-colors"
         >
-          {loading ? "Optimizing..." : "Optimize"}
+          {loading ? (isZh ? "优化中..." : "Optimizing...") : (isZh ? "优化" : "Optimize")}
         </button>
       </div>
 
@@ -85,7 +101,7 @@ export function PromptOptimizer() {
         <div className="mb-6">
           <div className="flex items-center justify-between mb-2">
             <label className="block text-sm font-medium text-text">
-              Generated System Prompt
+              {isZh ? "生成的 System Prompt" : "Generated System Prompt"}
             </label>
             <CopyButton text={output} />
           </div>
@@ -94,7 +110,7 @@ export function PromptOptimizer() {
       )}
 
       <div className="mt-8 p-4 bg-bg-secondary rounded-lg">
-        <h2 className="text-sm font-semibold mb-2">Example goals to try</h2>
+        <h2 className="text-sm font-semibold mb-2">{isZh ? "试试这些示例" : "Example goals to try"}</h2>
         <ul className="space-y-1.5">
           {examples.map((ex, i) => (
             <li key={i}>

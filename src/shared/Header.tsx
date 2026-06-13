@@ -1,12 +1,16 @@
 import type { Lang } from "../i18n";
+import { getAlternateUrl, getLangFromPath } from "../i18n";
 import { SITE_NAME } from "./constants";
 
 interface HeaderProps {
   lang?: Lang;
 }
 
-export function Header({ lang = "en" }: HeaderProps) {
-  const isZh = lang === "zh";
+export function Header({ lang }: HeaderProps) {
+  const currentLang = lang || getLangFromPath(window.location.pathname);
+  const isZh = currentLang === "zh";
+  const otherLang: Lang = isZh ? "en" : "zh";
+
   return (
     <header className="border-b border-border bg-bg">
       <div className="max-w-5xl mx-auto px-4 h-14 flex items-center justify-between">
@@ -23,7 +27,10 @@ export function Header({ lang = "en" }: HeaderProps) {
           <a href={isZh ? "/zh/mvp/" : "/mvp/"} className="text-text-secondary hover:text-text">
             MVP
           </a>
-          <a href={isZh ? "/" : "/zh/"} className="text-text-secondary hover:text-text">
+          <a
+            href={getAlternateUrl(window.location.pathname, otherLang)}
+            className="text-text-secondary hover:text-text"
+          >
             {isZh ? "English" : "中文"}
           </a>
         </nav>
