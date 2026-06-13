@@ -1,0 +1,25 @@
+
+━━━ AI Prompt Optimizer — Automated Test ━━━
+  2026-06-13 21:05:50
+
+[33m[Pages][0m Production URL
+  [32mPASS[0m [38;2;88;91;112m(200)[0m MVP page loads
+  [32mPASS[0m [38;2;88;91;112m(301)[0m Old URL redirects
+
+[33m[API][0m Workers AI endpoint
+  [32mPASS[0m [38;2;88;91;112m(200, **Role** — Sql Query Assistant
+**Task** — Generate Sql Queries Based On User Inp...)[0m English prompt
+  [32mPASS[0m [38;2;88;91;112m(200, **Role**: Sql 查询助手
+**Task**: 根据用户需求编写 Sql 查询语句
+**Constraints...)[0m Chinese prompt
+
+[33m[Domain][0m apey.co custom domain
+  [32mPASS[0m [38;2;88;91;112m(200)[0m API proxy works
+
+[33m[Errors][0m Edge cases
+  [32mPASS[0m [38;2;88;91;112m(400)[0m Empty goal 400
+  [32mPASS[0m [38;2;88;91;112m(400)[0m Missing field 400
+
+━━━ Results ━━━
+  [32mPass: 7[0m  [31mFail: 0[0m  Total: 7
+

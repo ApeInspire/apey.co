@@ -37,6 +37,7 @@ export function PromptOptimizer({ lang = "en" }: Props) {
 
       if (!res.ok) {
         setError(data.error || "Request failed.");
+        setOutput("");
         return;
       }
 
@@ -49,6 +50,7 @@ export function PromptOptimizer({ lang = "en" }: Props) {
           ? "网络错误。请检查连接后重试。"
           : "Network error. Check your connection and try again."
       );
+      setOutput("");
     } finally {
       setLoading(false);
     }

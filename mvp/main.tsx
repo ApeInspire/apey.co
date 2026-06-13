@@ -11,7 +11,7 @@ const lang = getLangFromPath(window.location.pathname);
 const isZh = lang === "zh";
 
 const T = {
-  heading: isZh ? "MVP" : "MVP",
+  heading: "MVP",
   subtitle: isZh ? "小实验，快速验证。每个 MVP 回答一个问题。" : "Small experiments shipped fast. Each MVP answers one question.",
   empty: isZh ? "还没有东西。" : "Nothing here yet.",
   status: {
