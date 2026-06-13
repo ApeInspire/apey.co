@@ -12,6 +12,17 @@ const lang = getLangFromPath(window.location.pathname);
 
 const enPosts: BlogPostMeta[] = [
   {
+    slug: "big-must-fall",
+    title: "Big Must Fall",
+    description:
+      "Dinosaurs went extinct, cockroaches survived. In the AI era, bigness is not an advantage — it's the problem. Why companies that guard against AI will die.",
+    date: "2026-06-13",
+    category: "industry",
+    tags: ["AI", "enterprise", "industry-change", "dinosaur-theory"],
+    author: "Ape",
+    lang: "zh",
+  },
+  {
     slug: "building-an-mcp-server",
     title: "I Built an MCP Server: From Protocol to Production",
     description:
@@ -58,6 +69,17 @@ const enPosts: BlogPostMeta[] = [
 ];
 
 const zhPosts: BlogPostMeta[] = [
+  {
+    slug: "big-must-fall",
+    title: "大而必倒",
+    description:
+      "恐龙灭绝了，蟑螂活了下来。在 AI 时代，大不是优势，大本身就是问题。从恐龙到企业再到人，谁在拒绝 AI，谁就在走向灭亡。",
+    date: "2026-06-13",
+    category: "industry",
+    tags: ["AI", "企业转型", "行业变革", "恐龙理论"],
+    author: "Ape",
+    lang: "zh",
+  },
   {
     slug: "building-an-mcp-server",
     title: "我建了一个 MCP 服务器：从协议到发布",
