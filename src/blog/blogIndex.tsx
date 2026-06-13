@@ -12,17 +12,6 @@ const lang = getLangFromPath(window.location.pathname);
 
 const enPosts: BlogPostMeta[] = [
   {
-    slug: "big-must-fall",
-    title: "Big Must Fall",
-    description:
-      "Dinosaurs went extinct, cockroaches survived. In the AI era, bigness is not an advantage — it's the problem. Why companies that guard against AI will die.",
-    date: "2026-06-13",
-    category: "industry",
-    tags: ["AI", "enterprise", "industry-change", "dinosaur-theory"],
-    author: "Ape",
-    lang: "zh",
-  },
-  {
     slug: "building-an-mcp-server",
     title: "I Built an MCP Server: From Protocol to Production",
     description:
