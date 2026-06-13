@@ -23,7 +23,7 @@ export function PromptOptimizer() {
     setOutput(userPrompt);
 
     try {
-      const res = await fetch("https://apey-co.pages.dev/api/optimize", {
+      const res = await fetch("/api/optimize", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ goal: userPrompt, lang }),

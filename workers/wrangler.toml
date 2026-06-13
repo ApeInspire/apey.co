@@ -1,0 +1,7 @@
+name = "apey-co-api-proxy"
+main = "api-proxy.ts"
+compatibility_date = "2025-04-01"
+
+[[routes]]
+pattern = "apey.co/api/*"
+zone_name = "apey.co"
