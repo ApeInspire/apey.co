@@ -6,7 +6,15 @@ export interface Tool {
   keywords: string[];
 }
 
-export const TOOLS: Tool[] = [];
+export const TOOLS: Tool[] = [
+  {
+    name: "AI Prompt Optimizer",
+    slug: "prompt-optimizer",
+    description: "Describe what you want and get back a structured, executable System Prompt.",
+    icon: "sparkles",
+    keywords: ["prompt", "AI", "system prompt", "prompt engineering", "optimizer"],
+  },
+];
 
 export const SITE_NAME = "apey.co";
 export const SITE_DESCRIPTION = "To know to act";

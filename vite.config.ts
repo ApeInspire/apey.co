@@ -55,6 +55,10 @@ export default defineConfig({
           __dirname,
           "mvp/first-product/index.html"
         ),
+        "tools/prompt-optimizer": resolve(
+          __dirname,
+          "tools/prompt-optimizer/index.html"
+        ),
       },
     },
   },
