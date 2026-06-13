@@ -22,19 +22,3 @@ export function getAlternateUrl(currentPath: string, targetLang: Lang): string {
   }
 }
 
-export const UI_TEXT: Record<Lang, Record<string, string>> = {
-  en: {
-    blog: "Blog",
-    mvp: "MVP",
-    about: "About",
-    langSwitch: "中文",
-    relatedTools: "Related tools",
-  },
-  zh: {
-    blog: "博客",
-    mvp: "MVP",
-    about: "关于",
-    langSwitch: "EN",
-    relatedTools: "相关工具",
-  },
-};

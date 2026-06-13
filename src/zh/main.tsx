@@ -1,58 +1,13 @@
 import { createRoot } from "react-dom/client";
 import { Layout } from "../shared/Layout";
 import { BlogList } from "../blog/BlogList";
+import { getPosts } from "../blog/blogConfig";
 import { initAnalytics } from "../shared/analytics";
 import "../styles/global.css";
-import type { BlogPostMeta } from "../blog/blogConfig";
 
 initAnalytics();
 
-const posts: BlogPostMeta[] = [
-  {
-    slug: "big-must-fall",
-    title: "大而必倒",
-    description:
-      "恐龙灭绝了，蟑螂活了下来。在 AI 时代，大不是优势，大本身就是问题。从恐龙到企业再到人，谁在拒绝 AI，谁就在走向灭亡。",
-    date: "2026-06-13",
-    category: "industry",
-    tags: ["AI", "企业转型", "行业变革", "恐龙理论"],
-    author: "Ape",
-    lang: "zh",
-  },
-  {
-    slug: "building-an-mcp-server",
-    title: "我建了一个 MCP 服务器：从协议到发布",
-    description:
-      "MCP 是 2026 年增长最快的 AI 开发技能。从协议到发布，拆解架构设计、技术决策和踩坑记录。",
-    date: "2026-06-10",
-    category: "ai-practice",
-    tags: ["mcp", "claude-code", "ai-development", "typescript", "open-source"],
-    author: "Ape",
-    lang: "zh",
-  },
-  {
-    slug: "what-is-claude-code-skill",
-    title: "Claude Code Skill：从第一性原理拆解",
-    description:
-      "Claude Code Skill 不是插件，是一段在运行时注入的 Prompt 片段。五层架构拆解它为什么能工作。",
-    date: "2026-06-09",
-    category: "ai-practice",
-    tags: ["claude-code", "skill", "ai-architecture", "prompt-engineering"],
-    author: "Ape",
-    lang: "zh",
-  },
-  {
-    slug: "how-i-built-a-website-with-ai",
-    title: "知行合一",
-    description:
-      "用 AI 从零搭了一个网站。关于编程语言、判断、品味，和王阳明。",
-    date: "2026-06-08",
-    category: "ai-practice",
-    tags: ["ai-development", "claude-code", "web-development"],
-    author: "Ape",
-    lang: "zh",
-  },
-];
+const posts = getPosts("zh", true);
 
 createRoot(document.getElementById("root")!).render(
   <Layout lang="zh">

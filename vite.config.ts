@@ -60,10 +60,6 @@ export default defineConfig({
           __dirname,
           "zh/blog/big-must-fall/index.html"
         ),
-        "mvp/first-product": resolve(
-          __dirname,
-          "mvp/first-product/index.html"
-        ),
         "mvp/prompt-optimizer": resolve(
           __dirname,
           "mvp/prompt-optimizer/index.html"

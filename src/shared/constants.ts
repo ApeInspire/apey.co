@@ -1,13 +1,3 @@
-export interface Tool {
-  name: string;
-  slug: string;
-  description: string;
-  icon: string;
-  keywords: string[];
-}
-
-export const TOOLS: Tool[] = [];
-
 export const SITE_NAME = "apey.co";
 export const SITE_DESCRIPTION = "To know to act";
 
