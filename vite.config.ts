@@ -11,6 +11,7 @@ export default defineConfig({
         main: resolve(__dirname, "index.html"),
         zh: resolve(__dirname, "zh/index.html"),
         "blog/index": resolve(__dirname, "blog-index.html"),
+        "zh/blog/index": resolve(__dirname, "zh/blog/index.html"),
         "blog/how-i-use-ai-for-daily-work": resolve(
           __dirname,
           "blog/how-i-use-ai-for-daily-work/index.html"
