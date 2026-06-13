@@ -1,18 +1,18 @@
 import { createRoot } from "react-dom/client";
-import { BlogLayout } from "../../src/blog/BlogLayout";
-import { CATEGORIES } from "../../src/blog/blogConfig";
+import { BlogLayout } from "../../../src/blog/BlogLayout";
+import { CATEGORIES } from "../../../src/blog/blogConfig";
 import { meta, sections } from "./content";
-import { initAnalytics } from "../../src/shared/analytics";
-import "../../src/styles/global.css";
+import { initAnalytics } from "../../../src/shared/analytics";
+import "../../../src/styles/global.css";
 
 initAnalytics();
 
 function BlogPost() {
   return (
-    <BlogLayout lang="en">
+    <BlogLayout lang="zh">
       <header className="mb-8">
         <div className="flex items-center gap-2 text-xs text-text-secondary mb-3">
-          <span className="px-2 py-0.5 bg-bg-secondary rounded">{CATEGORIES[meta.category]?.en || meta.category}</span>
+          <span className="px-2 py-0.5 bg-bg-secondary rounded">{CATEGORIES[meta.category]?.zh || meta.category}</span>
           <time>{meta.date}</time>
         </div>
         <h1 className="text-xl sm:text-2xl font-bold leading-tight">{meta.title}</h1>

@@ -25,17 +25,16 @@ export const CATEGORIES: Record<BlogCategory, { en: string; zh: string }> = {
 // Each post is listed in its primary language.
 // Cross-listing (e.g. zh post on EN page) is handled by consumers via `lang` field.
 export const ALL_POSTS: BlogPostMeta[] = [
-  // ── Primary: ZH ──────────────────────────
   {
     slug: "big-must-fall",
-    title: "大而必倒",
+    title: "Big Must Fall",
     description:
-      "恐龙灭绝了，蟑螂活了下来。在 AI 时代，大不是优势，大本身就是问题。从恐龙到企业再到人，谁在拒绝 AI，谁就在走向灭亡。",
+      "Dinosaurs went extinct, cockroaches survived. In the AI era, bigness is a liability. Why companies that resist AI are heading for extinction.",
     date: "2026-06-13",
     category: "industry",
-    tags: ["AI", "企业转型", "行业变革", "恐龙理论"],
+    tags: ["AI", "enterprise", "industry-change", "dinosaur-theory"],
     author: "Ape",
-    lang: "zh",
+    lang: "en",
   },
   // ── Primary: EN ──────────────────────────
   {
@@ -87,10 +86,10 @@ export const ALL_POSTS: BlogPostMeta[] = [
 // Translations for cross-listing: slug → localized override
 export const TRANSLATIONS: Record<string, { title: string; description: string; lang: "zh" | "en" }> = {
   "big-must-fall": {
-    title: "Big Must Fall",
+    title: "大而必倒",
     description:
-      "Dinosaurs went extinct, cockroaches survived. In the AI era, bigness is a liability.",
-    lang: "en",
+      "恐龙灭绝了，蟑螂活了下来。在 AI 时代，大不是优势，大本身就是问题。",
+    lang: "zh",
   },
   "building-an-mcp-server": {
     title: "我建了一个 MCP 服务器：从协议到发布",

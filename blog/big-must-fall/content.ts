@@ -1,147 +1,151 @@
 export const meta = {
-  title: "大而必倒",
+  title: "Big Must Fall",
   description:
-    "恐龙灭绝了，蟑螂活了下来。在 AI 时代，大不是优势，大本身就是问题。从恐龙到企业再到人，谁在拒绝 AI，谁就在走向灭亡。",
+    "Dinosaurs went extinct, cockroaches survived. In the AI era, bigness is not an advantage — it's a liability. From dinosaurs to corporations to individuals, those who resist AI are heading for extinction.",
   date: "2026-06-13",
   category: "industry" as const,
-  tags: ["AI", "企业转型", "行业变革", "恐龙理论"],
-  lang: "zh" as const,
+  tags: ["AI", "enterprise", "industry-change", "dinosaur-theory"],
+  lang: "en" as const,
 };
 
 export const sections = [
   {
     type: "heading" as const,
-    content: "恐龙为什么灭绝，蟑螂为什么活下来",
+    content: "Why the Dinosaurs Died, and Why the Cockroaches Lived",
   },
   {
     type: "paragraph" as const,
     content:
-      "六千五百万年前，一颗小行星撞了地球。恐龙灭绝了。蟑螂活了下来。",
+      "Sixty-five million years ago, an asteroid hit Earth. The dinosaurs went extinct. The cockroaches lived.",
   },
   {
     type: "paragraph" as const,
     content:
-      `恐龙不是输在不够强——它们统治了地球一亿六千万年。但它们的生存策略建立在"大"之上：巨大的体型需要巨大的食物量，巨大的种群依赖稳定的生态系统。当环境突变，大不再是优势，大本身就是死因。食物链断裂，饿死；生态崩溃，灭绝。`,
+      "Dinosaurs didn't lose because they were weak — they ruled the planet for 160 million years. But their survival strategy was built on bigness: massive bodies required massive amounts of food, and massive populations depended on a stable ecosystem. When the environment changed overnight, bigness wasn't an advantage anymore — it was the cause of death. Food chains collapsed. Ecosystems crumbled. Extinction.",
   },
   {
     type: "paragraph" as const,
     content:
-      "蟑螂活下来不是因为比恐龙强，而是因为小、快、什么都吃、什么都适应。它们不需要稳定的生态系统，它们只需要一个缝隙。",
+      "Cockroaches survived not because they were stronger, but because they were small, fast, and could eat anything. They didn't need a stable ecosystem. They just needed a crack in the wall.",
   },
   {
     type: "paragraph" as const,
     content:
-      "这个星球的每一次环境突变都会产生同样的结果：旧时代的巨头倒下，适应新环境的小角色崛起。AI 就是这个时代的小行星。",
+      "Every environmental catastrophe in history produces the same result: the old giants fall, and the creatures that adapt to the new world rise. AI is this era's asteroid.",
   },
+
   {
     type: "heading" as const,
-    content: "AI 不是宠物，不是鹦鹉，不是你可以关在笼子里的东西",
+    content: "AI Is Not a Parrot",
   },
   {
     type: "paragraph" as const,
     content:
-      "我见过太多企业对 AI 的态度，总结起来就是一句话：又想用，又怕它。",
+      "I've seen too many companies' attitudes toward AI summed up in one sentence: they want to use it, but they're afraid of it.",
   },
   {
     type: "paragraph" as const,
     content:
-      `他们用 AI 做什么？聊天机器人。客服助手。会议纪要。文档摘要。全都是"安全"的应用——那些即使出错也伤不到核心业务的东西。他们把 AI 想象成一只鹦鹉：放在笼子里，教它说几句话，客人来了夸一句"真聪明"，然后继续锁回笼子里。`,
+      "What do they use AI for? Chatbots. Customer service assistants. Meeting notes. Document summaries. All \"safe\" applications — things that won't hurt the core business if they go wrong. They treat AI like a parrot: put it in a cage, teach it a few phrases, let guests compliment how smart it is, then lock it back up.",
   },
   {
     type: "paragraph" as const,
     content:
-      "问题是，AI 现在已经不是鹦鹉了。它是一只正在长大的迅猛龙。你把它关在笼子里，它不是在学说话，它是在想怎么出去。而你的竞争对手里，总有人不关笼子。",
+      "The problem is, AI is no longer a parrot. It's a velociraptor growing up fast. You lock it in a cage, and it's not learning to talk — it's figuring out how to get out. And somewhere out there, one of your competitors isn't using a cage.",
   },
   {
     type: "paragraph" as const,
     content:
-      `前段时间和几个朋友聊天，他们公司对 AI 的态度就是严防死守。采购了一套 AI 安全系统，花了几十万。每周开一次 AI 合规会议。员工用 ChatGPT 需要审批。整个公司的 AI 预算，80% 花在了"防"上，只有 20% 花在了"用"上。我问他，效果怎么样？他说，现在大家都在偷偷用手机上的 Claude，因为公司的 AI 根本没法用。`,
+      "Recently I talked with friends at a large company. Their approach to AI is lockdown. They bought an AI security system for hundreds of thousands. Weekly AI compliance meetings. Employees need approval to use ChatGPT. 80% of the AI budget goes to defense, 20% to actual usage. I asked how it was working. He said everyone's secretly using Claude on their phones because the company AI is useless.",
   },
   {
     type: "paragraph" as const,
     content:
-      "这就是恐龙思维。恐龙的生存策略是防御——更厚的皮肤，更大的体型，更强的咬合力。但当小行星掉下来的时候，所有这些东西都没用。企业在 AI 上的防御策略也一样：你可以在门口建立一百道防火墙，但当整个行业被 AI 重构的时候，你的防火墙保护的是一个空壳。",
+      "This is dinosaur thinking. The dinosaur's survival strategy was defense — thicker skin, bigger body, stronger bite. But when the asteroid hit, none of those things mattered. Enterprise AI defense strategies are the same: you can build a hundred firewalls at the gate, but when the entire industry is being rebuilt by AI, your firewalls are protecting an empty shell.",
   },
+
   {
     type: "heading" as const,
-    content: "AI 的特性与严密管控天然互斥",
+    content: "AI and Strict Control Are Fundamentally Incompatible",
   },
   {
     type: "paragraph" as const,
     content:
-      "我越来越确信一件事：AI 和传统企业组织是互斥的。不是矛盾，是互斥。像磁铁的同一个极，你越压它们，它们弹得越远。",
+      "I've become increasingly convinced of one thing: AI and traditional corporate organizations are mutually exclusive. Not in conflict — mutually exclusive. Like two magnets with the same pole. The harder you push them together, the harder they fly apart.",
   },
   {
     type: "paragraph" as const,
     content:
-      `传统企业建立在"人主导"这个前提上。人做决策，人执行流程，人承担责任。汇报链是人，审批节点是人，KPI 是人。整个组织架构图上的每一个方块，都装着一个人。`,
+      "Traditional companies are built on the premise of human dominance. Humans make decisions. Humans execute processes. Humans take responsibility. The reporting chain is human. The approval nodes are human. KPIs are human. Every box on the org chart contains a person.",
   },
   {
     type: "paragraph" as const,
     content:
-      `AI 驱动的组织不需要这些东西。决策可以在毫秒内完成，不需要等待周五的周会。执行可以 24 小时并行，不需要等审批邮件。AI 不会刷存在感，不会甩锅，不会在群聊里打"收到"。但它也不会接受人的控制——不是因为它反抗，而是因为控制本身削弱了它的价值。`,
+      "AI-driven organizations don't need any of this stuff. Decisions can be made in milliseconds, without waiting for Friday's meeting. Execution can run 24/7 in parallel, without waiting for approval emails. AI doesn't play office politics, doesn't pass blame, doesn't type \"Noted\" in the group chat. But it also won't accept human control — not because it rebels, but because control itself diminishes its value.",
   },
   {
     type: "paragraph" as const,
     content:
-      `这两套系统撞在一起，不是 AI 要取代人，而是它们的底层逻辑互相排斥。你说"这个决策需要 VP 审批"，AI 说"我已经模拟了一万次，这是最优解"。你说"我们在等下一轮预算"，AI 说"执行成本是零，为什么等"。`,
+      "When these two systems collide, it's not about AI replacing humans. It's that their fundamental logic repels each other. You say \"this decision needs VP approval.\" AI says \"I've simulated this ten thousand times. This is the optimal answer.\" You say \"we're waiting for the next budget cycle.\" AI says \"execution costs zero. Why wait.\"",
   },
   {
     type: "paragraph" as const,
     content:
-      `这不是谁对谁错的问题。这是一辆汽车和一匹马同时跑在高速公路上——你没法说"我们各让一步"，因为它们的运行方式从根本上就不兼容。`,
+      "This isn't a matter of who's right. It's a car and a horse running on the same highway — you can't say \"let's compromise\" because their operating models are fundamentally incompatible.",
   },
+
   {
     type: "heading" as const,
-    content: "这些企业，注定会倒",
+    content: "These Companies Are Destined to Fall",
   },
   {
     type: "paragraph" as const,
     content:
-      `我不认为这是一个"可能"发生的结果。我认为这是一个正在发生的现实。`,
+      "I don't think this is a \"might happen\" scenario. I think it's already happening.",
   },
   {
     type: "paragraph" as const,
     content:
-      "一个把 AI 当鹦鹉养的企业，在面对一个由 AI 驱动的竞争者时，会死得比恐龙还快。恐龙好歹还挣扎了一段时间。而一个靠 AI 起家的五人团队，可能在三个月内收割一个行业巨头 30% 的市场份额——不是因为他们更聪明，而是因为他们的决策速度和执行效率不在一个维度上。",
+      "A company that treats AI like a pet parrot, when facing an AI-native competitor, will die faster than the dinosaurs. At least the dinosaurs struggled for a while. A five-person AI-native team can capture 30% of an industry giant's market share in three months — not because they're smarter, but because their decision velocity and execution efficiency operate in a different dimension.",
   },
   {
     type: "paragraph" as const,
     content:
-      `我观察到一个很有趣的现象：很多大公司的管理层对 AI 的态度，不是"研究它"，不是"理解它"，而是"证明它不行"。他们会专门找一些 AI 犯错的案例：你看，它连这个都能算错。你看，它又胡编乱造了。你看，没有人的判断，AI 根本不行。`,
+      "I've observed a fascinating phenomenon: many senior executives at large companies don't approach AI with curiosity — they approach it with the goal of proving it wrong. They actively seek out examples of AI making mistakes: See, it got this calculation wrong. See, it hallucinated again. See, without human judgment, AI is useless.",
   },
   {
     type: "paragraph" as const,
     content:
-      "我理解这个心态。承认 AI 的能力意味着承认自己的某些技能已经贬值。对于花了几十年爬到决策层的人来说，这是最痛苦的事。恐龙也不会主动承认陨石来了——如果你是一头霸王龙，你的全部存在意义就是当食物链最顶端的东西，你怎么可能接受一只蟑螂比你活得久？",
+      "I understand this mindset. Admitting AI's capability means admitting that some of your own skills have depreciated. For someone who spent decades climbing to the decision-making level, this is the most painful thing imaginable. Dinosaurs wouldn't admit the asteroid was coming either — if you're a Tyrannosaurus rex and your entire existence is built on being at the top of the food chain, how could you possibly accept that a cockroach will outlive you?",
   },
   {
     type: "paragraph" as const,
     content:
-      "但事实就是事实。你证明 AI 不行一百次，第一百零一次它行了，你的证明就失去了全部价值。而那个一直在研究 AI 能做什么的人，已经在你证明它不行的这一百次里，找到了市场、做出了产品、抢走了用户。",
+      "But facts are facts. You prove AI wrong a hundred times. The hundred-and-first time it gets it right, all your proof loses its value. Meanwhile, the person who spent that time studying what AI can do has already found a market, built a product, and taken your users.",
   },
+
   {
     type: "heading" as const,
-    content: "能活下来的，不是最大的，是最能适应的",
+    content: "What Survives Isn't the Biggest — It's the Most Adaptable",
   },
   {
     type: "paragraph" as const,
     content:
-      "回到蟑螂。蟑螂没有战略规划部。蟑螂没有年度 OKR。蟑螂没有人才盘点。蟑螂只做一件事，并且做了三亿年——适应。",
+      "Back to the cockroach. Cockroaches don't have strategic planning departments. They don't have annual OKRs. They don't do talent reviews. Cockroaches do exactly one thing, and they've been doing it for 300 million years: adapt.",
   },
   {
     type: "paragraph" as const,
     content:
-      `AI 时代能活下来的企业，不会是今天最大的那些。太大意味着太多人、太多流程、太多既得利益、太多"我们一直这么做"的惯性。转型对他们来说不是战略选择，是自杀——不转型会被外部的 AI 竞争者吃掉，转型会被内部的抵制和惯性拖死。`,
+      "The companies that survive the AI era won't be today's biggest. Big means too many people, too many processes, too many vested interests, too much \"this is how we've always done it\" inertia. Transformation isn't a strategic option for them — it's suicide either way. Don't transform? AI-native competitors eat you. Transform? Internal resistance and inertia drag you to death.",
   },
   {
     type: "paragraph" as const,
     content:
-      `能活下来的是那些没有负担的。那些一出生就把 AI 作为操作系统、而不是"工具"的公司。那些不需要从人主导切换到 AI 驱动的组织，因为它们从一开始就没有人主导这一层。那些不会开"AI 合规会"的团队，因为他们不需要防自己。`,
+      "What survives are the ones without baggage. The ones born with AI as their operating system, not as a \"tool.\" The ones that never needed to switch from human-led to AI-driven because human-led was never a layer they had. The teams that don't hold AI compliance meetings because they don't need to protect themselves from themselves.",
   },
   {
     type: "paragraph" as const,
     content:
-      "大而必倒。不是因为大公司不够聪明，不是因为小公司有什么秘密武器。就是因为你太大了，你转不过身来。陨石砸下来的时候，身体越大的死得越快。这不是商业策略的问题，这是物理定律。",
+      "Big must fall. Not because large companies aren't smart enough. Not because small teams have some secret weapon. It's because you're too big to turn around. When the asteroid hits, the bigger the body, the faster it dies. This isn't a business strategy problem. It's physics.",
   },
 ];
