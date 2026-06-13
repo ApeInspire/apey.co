@@ -74,8 +74,7 @@ Requirements: Specific, executable, unambiguous. Output only the System Prompt, 
     });
   } catch (e) {
     const message = e instanceof Error ? e.message : String(e);
-    const stack = e instanceof Error ? e.stack : "";
-    console.error("AI.run failed:", message, stack);
+    console.error("AI.run failed:", message);
     if (message.includes("4006") || message.includes("quota") || message.includes("allocation")) {
       return new Response(
         JSON.stringify({ error: "Daily free quota reached. Try again tomorrow." }),
