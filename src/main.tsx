@@ -13,6 +13,17 @@ const isZh = lang === "zh";
 
 const posts: BlogPostMeta[] = [
   {
+    slug: "big-must-fall",
+    title: "Big Must Fall",
+    description:
+      "Dinosaurs went extinct, cockroaches survived. In the AI era, bigness is not an advantage — it's a liability. Why companies that resist AI are heading for extinction.",
+    date: "2026-06-13",
+    category: "industry",
+    tags: ["AI", "enterprise", "industry-change"],
+    author: "Ape",
+    lang: "zh",
+  },
+  {
     slug: "building-an-mcp-server",
     title: "I Built an MCP Server: From Protocol to Production",
     description:
