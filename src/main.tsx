@@ -13,6 +13,17 @@ const isZh = lang === "zh";
 
 const posts: BlogPostMeta[] = [
   {
+    slug: "big-must-fall",
+    title: "大而必倒",
+    description:
+      "恐龙灭绝了，蟑螂活了下来。在 AI 时代，大不是优势，大本身就是问题。",
+    date: "2026-06-13",
+    category: "industry",
+    tags: ["AI", "enterprise", "industry-change"],
+    author: "Ape",
+    lang: "zh",
+  },
+  {
     slug: "building-an-mcp-server",
     title: "I Built an MCP Server: From Protocol to Production",
     description:
