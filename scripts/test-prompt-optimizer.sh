@@ -47,6 +47,11 @@ echo "${YELLOW}[Pages]${RST} Production URL"
 check "MVP page loads"        "$BASE/mvp/prompt-optimizer/" GET 200
 check "Old URL redirects"     "$BASE/tools/prompt-optimizer/" GET 301
 
+# ── Health ────────────────────────────────────
+echo ""
+echo "${YELLOW}[Health]${RST} API health check"
+check "Health endpoint"       "$DOMAIN/api/optimize" GET 200
+
 # ── API ───────────────────────────────────────
 echo ""
 echo "${YELLOW}[API]${RST} Workers AI endpoint"

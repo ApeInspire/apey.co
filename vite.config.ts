@@ -2,72 +2,50 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import mdx from "@mdx-js/rollup";
 import { resolve } from "path";
+import { readdirSync, existsSync } from "fs";
+
+function scanEntries(root: string): Record<string, string> {
+  const entries: Record<string, string> = {};
+  const dirs = ["", "zh/", "blog/", "zh/blog/", "mvp/", "zh/mvp/", "skills/", "zh/skills/"];
+
+  for (const dir of dirs) {
+    const base = resolve(root, dir);
+    if (!existsSync(base)) continue;
+
+    // Direct index.html
+    const indexPath = resolve(base, "index.html");
+    if (existsSync(indexPath)) {
+      const name = dir ? dir.replace(/\/$/, "").replace(/\//g, "/") : "main";
+      entries[name] = indexPath;
+    }
+
+    // Subdirectory pages (blog/{slug}/, mvp/{slug}/, skills/{slug}/)
+    try {
+      for (const entry of readdirSync(base, { withFileTypes: true })) {
+        if (!entry.isDirectory()) continue;
+        const htmlPath = resolve(base, entry.name, "index.html");
+        if (existsSync(htmlPath)) {
+          const key = dir ? `${dir}${entry.name}`.replace(/\/$/, "") : entry.name;
+          entries[key] = htmlPath;
+        }
+      }
+    } catch {
+      // Directory may not exist or be empty
+    }
+  }
+
+  return entries;
+}
 
 export default defineConfig({
   plugins: [react(), mdx()],
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, "index.html"),
-        zh: resolve(__dirname, "zh/index.html"),
+        ...scanEntries(__dirname),
+        // Special entries not following the standard pattern
         "blog/index": resolve(__dirname, "blog-index.html"),
         "zh/blog/index": resolve(__dirname, "zh/blog/index.html"),
-        "blog/how-i-use-ai-for-daily-work": resolve(
-          __dirname,
-          "blog/how-i-use-ai-for-daily-work/index.html"
-        ),
-        "blog/how-i-built-a-website-with-ai": resolve(
-          __dirname,
-          "blog/how-i-built-a-website-with-ai/index.html"
-        ),
-        "zh/blog/how-i-built-a-website-with-ai": resolve(
-          __dirname,
-          "zh/blog/how-i-built-a-website-with-ai/index.html"
-        ),
-        "zh/blog/what-is-claude-code-skill": resolve(
-          __dirname,
-          "zh/blog/what-is-claude-code-skill/index.html"
-        ),
-        mvp: resolve(__dirname, "mvp/index.html"),
-        "zh/mvp": resolve(__dirname, "zh/mvp/index.html"),
-        skills: resolve(__dirname, "skills/index.html"),
-        "skills/publish-article": resolve(
-          __dirname,
-          "skills/publish-article/index.html"
-        ),
-        "blog/what-is-claude-code-skill": resolve(
-          __dirname,
-          "blog/what-is-claude-code-skill/index.html"
-        ),
-        "zh/skills": resolve(__dirname, "zh/skills/index.html"),
-        "zh/skills/publish-article": resolve(
-          __dirname,
-          "zh/skills/publish-article/index.html"
-        ),
-        "blog/building-an-mcp-server": resolve(
-          __dirname,
-          "blog/building-an-mcp-server/index.html"
-        ),
-        "zh/blog/building-an-mcp-server": resolve(
-          __dirname,
-          "zh/blog/building-an-mcp-server/index.html"
-        ),
-        "blog/big-must-fall": resolve(
-          __dirname,
-          "blog/big-must-fall/index.html"
-        ),
-        "zh/blog/big-must-fall": resolve(
-          __dirname,
-          "zh/blog/big-must-fall/index.html"
-        ),
-        "mvp/prompt-optimizer": resolve(
-          __dirname,
-          "mvp/prompt-optimizer/index.html"
-        ),
-        "zh/mvp/prompt-optimizer": resolve(
-          __dirname,
-          "zh/mvp/prompt-optimizer/index.html"
-        ),
       },
     },
   },

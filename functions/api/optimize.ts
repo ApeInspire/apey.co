@@ -12,6 +12,12 @@ export const onRequestOptions: PagesFunction = async () => {
   return new Response(null, { status: 204, headers: CORS });
 };
 
+export const onRequestGet: PagesFunction = async () => {
+  return new Response(JSON.stringify({ status: "ok", model: "llama-4-scout-17b" }), {
+    headers: { "Content-Type": "application/json", ...CORS },
+  });
+};
+
 export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
   const body = await request.json() as { goal: string; lang?: string };
   const { goal, lang = "en" } = body;
