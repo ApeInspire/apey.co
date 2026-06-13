@@ -56,6 +56,10 @@ export default defineConfig({
           __dirname,
           "blog/big-must-fall/index.html"
         ),
+        "zh/blog/big-must-fall": resolve(
+          __dirname,
+          "zh/blog/big-must-fall/index.html"
+        ),
         "mvp/first-product": resolve(
           __dirname,
           "mvp/first-product/index.html"
