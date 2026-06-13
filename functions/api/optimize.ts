@@ -2,6 +2,16 @@ interface Env {
   AI: Ai;
 }
 
+const CORS = {
+  "Access-Control-Allow-Origin": "https://apey.co",
+  "Access-Control-Allow-Methods": "POST, OPTIONS",
+  "Access-Control-Allow-Headers": "Content-Type",
+};
+
+export const onRequestOptions: PagesFunction = async () => {
+  return new Response(null, { status: 204, headers: CORS });
+};
+
 export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
   const body = await request.json() as { goal: string; lang?: string };
   const { goal, lang = "en" } = body;
@@ -9,14 +19,14 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
   if (!goal || typeof goal !== "string" || goal.trim().length === 0) {
     return new Response(
       JSON.stringify({ error: "Goal is required." }),
-      { status: 400, headers: { "Content-Type": "application/json" } }
+      { status: 400, headers: { "Content-Type": "application/json", ...CORS } }
     );
   }
 
   if (goal.length > 2000) {
     return new Response(
       JSON.stringify({ error: "Goal must be under 2000 characters." }),
-      { status: 400, headers: { "Content-Type": "application/json" } }
+      { status: 400, headers: { "Content-Type": "application/json", ...CORS } }
     );
   }
 
@@ -55,12 +65,12 @@ Requirements: Specific, executable, unambiguous. Output only the System Prompt, 
     if (!prompt) {
       return new Response(
         JSON.stringify({ error: "AI returned an empty response. Try rephrasing your goal." }),
-        { status: 500, headers: { "Content-Type": "application/json" } }
+        { status: 500, headers: { "Content-Type": "application/json", ...CORS } }
       );
     }
 
     return new Response(JSON.stringify({ prompt }), {
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json", ...CORS },
     });
   } catch (e) {
     const message = e instanceof Error ? e.message : String(e);
@@ -69,12 +79,12 @@ Requirements: Specific, executable, unambiguous. Output only the System Prompt, 
     if (message.includes("4006") || message.includes("quota") || message.includes("allocation")) {
       return new Response(
         JSON.stringify({ error: "Daily free quota reached. Try again tomorrow." }),
-        { status: 429, headers: { "Content-Type": "application/json" } }
+        { status: 429, headers: { "Content-Type": "application/json", ...CORS } }
       );
     }
     return new Response(
       JSON.stringify({ error: "AI service temporarily unavailable. Try again." }),
-      { status: 502, headers: { "Content-Type": "application/json" } }
+      { status: 502, headers: { "Content-Type": "application/json", ...CORS } }
     );
   }
 };
