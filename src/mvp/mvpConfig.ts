@@ -9,11 +9,11 @@ export interface MvpItem {
 
 export const MVPS: MvpItem[] = [
   {
-    title: "First Product",
-    slug: "first-product",
-    description: "An MVP born from blog analysis — a minimal, usable product.",
-    status: "building",
-    date: "2026-06-07",
-    tags: ["mvp", "experiment"],
+    title: "AI Prompt Optimizer",
+    slug: "prompt-optimizer",
+    description: "Describe what you want and get back a structured, executable System Prompt — powered by Workers AI.",
+    status: "live",
+    date: "2026-06-13",
+    tags: ["ai", "prompt-engineering", "workers-ai", "mvp"],
   },
 ];
